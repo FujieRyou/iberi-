@@ -1,0 +1,149 @@
+@use "_vers" as color;
+
+body{
+    background-color: color.$mainBg;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: color.$headerBg;
+    /* padding-top: 44px; */
+    .flexWrap{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 15px;
+        .returnBtn{
+            position: absolute;
+            left: 24px;
+            bottom: 8px;
+            width: 48px;
+            height: 48px;
+            background-image: url("../img/retunBtnBg.svg");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;    
+                .returnBtnArrow{
+                    width: 10px;
+                    height: auto;
+                }            
+            }
+        }
+        h2{
+            text-align: center;
+            font-size: 18px;
+            margin: 0 auto;
+        }        
+    }
+}
+
+.explanation{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 24px;
+
+}
+
+.readingCardWrap{
+    width: 330px;
+    height: 428px;
+    border: solid 4px color.$accentColor;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 16px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 64px;
+    background-size: cover;
+    .initialWrap{
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 87px;
+        height: 87px;
+        background-color: color.$subBg;
+        border-radius: 50px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
+        font-weight: bold;
+    }
+    .readingCardText{
+        writing-mode: vertical-rl;
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 55px;
+        letter-spacing: 3px;
+        color: color.$accentColor;
+    }
+}
+
+.fileBtn{
+    width: 100px;
+    height: 20px;
+}
+label{
+    display: block;
+    width: 300px;
+    height: 64px;
+    background-color: color.$btnDarkBg;
+    color: #fff;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 24px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0px 6px 0px color.$btnDarkDropshadow;
+
+}
+input{
+    display: none;
+}
+
+.decideBtn{
+    display: block;
+    width: 300px;
+    height: 64px;
+    border-radius: 50px;
+    background-color: color.$btnDarkBg;
+    margin: 0 auto;
+    margin-top: 36px;
+    color: #fff;
+    font-size: 20px;
+    box-shadow: 0px 6px 0px color.$btnDarkDropshadow;
+    display: none;
+}
+
+.redoBtn{
+    display: block;
+    width: 240px;
+    height: 64px;
+    border-radius: 50px;
+    background-color: color.$btnThinBg;
+    box-shadow: 0px 6px 0px color.$btnThinDropshadow;
+    margin: 0 auto;
+    margin-top: 16px;
+    color: #fff;
+    font-size: 20px;
+    display: none;
+
+}
+
+
